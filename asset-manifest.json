@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/anil1234kumar/profolio/static/css/main.8fe8a9b3.css",
+    "main.js": "/anil1234kumar/profolio/static/js/main.218f4a00.js",
+    "static/media/bird.jpg": "/anil1234kumar/profolio/static/media/bird.ed02e0af9953dcb19d0e.jpg",
+    "static/media/animal.jpg": "/anil1234kumar/profolio/static/media/animal.3688a8552afee95f9553.jpg",
+    "static/media/fish.jpg": "/anil1234kumar/profolio/static/media/fish.c89fef9a41d604b1c8c3.jpg",
+    "static/media/plant.jpg": "/anil1234kumar/profolio/static/media/plant.b9b4f428ed2e58178542.jpg",
+    "static/media/whyFuture.png": "/anil1234kumar/profolio/static/media/whyFuture.165053ef435130d8d15a.png",
+    "static/media/bootstrap-icons.woff?": "/anil1234kumar/profolio/static/media/bootstrap-icons.39795c0b4513de014cf8.woff",
+    "static/media/bootstrap-icons.woff2?": "/anil1234kumar/profolio/static/media/bootstrap-icons.b7bcc075b395c14ce8c2.woff2",
+    "static/media/accountCrate.png": "/anil1234kumar/profolio/static/media/accountCrate.ac31e7b74bfc8181eed0.png",
+    "static/media/GroupCoin.svg": "/anil1234kumar/profolio/static/media/GroupCoin.67f94aaf7acfcded2fa8261215e9994b.svg",
+    "static/media/sun.png": "/anil1234kumar/profolio/static/media/sun.6d48da504f4816188c8d.png",
+    "static/media/nCoin.svg": "/anil1234kumar/profolio/static/media/nCoin.d0ba814165f1c763a1b5afd38abebff2.svg",
+    "index.html": "/anil1234kumar/profolio/index.html",
+    "static/media/getFetch.cjs": "/anil1234kumar/profolio/static/media/getFetch.c4cca45e22bc1b2c7d0d.cjs",
+    "main.8fe8a9b3.css.map": "/anil1234kumar/profolio/static/css/main.8fe8a9b3.css.map",
+    "main.218f4a00.js.map": "/anil1234kumar/profolio/static/js/main.218f4a00.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8fe8a9b3.css",
+    "static/js/main.218f4a00.js"
+  ]
+}
