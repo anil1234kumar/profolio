@@ -62,7 +62,7 @@ function App() {
       <ThemeProviderCustom>
         <MouseContextProvider>
           {/* <Provider store={store}> */}
-          <RouterProvider router={router}></RouterProvider>
+          <RouterProvider basename={process.env.PUBLIC_URL}  router={router}></RouterProvider>
           {/* </Provider> */}
         </MouseContextProvider>
       </ThemeProviderCustom>
