@@ -1,0 +1,20 @@
+.todo-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: gray;
+    border-radius: 5px;
+    padding: 20px;
+
+    * {
+        p {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.todoheading {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}

@@ -1,0 +1,31 @@
+@import "./mixin.scss";
+
+$themes: (
+    light: ("securityBtn": #dfe3ec,
+        "darkWhite": #000,
+        "darkWhiteReverse": #fff,
+        "lightheader":#F8F8F8,
+        "borderCollapse":rgba(51, 51, 51, 0.2),
+        "acodianText":rgba(51, 51, 51, 0.6),
+        "circleBorder":rgba(51, 51, 51, 0.3),
+        "borderTheme": skyblue,
+        "curserpoint":black,
+        "curserpoint-outline":rgba(0, 0, 0, 0.8), "box-shadow-theme":rgba(135, 206, 235, 0.2)),
+    dark: ("securityBtn": #282c34,
+        "darkWhite": #fff,
+        "darkWhiteReverse": #000,
+        "lightheader":#000,
+        "borderCollapse":rgba(255, 255, 255, 0.2),
+        "acodianText":rgba(255, 255, 255, 0.6),
+        "circleBorder":rgba(255, 255, 255, 0.3),
+        "borderTheme":grey,
+        "curserpoint":blue,
+        "curserpoint-outline":rgba(0, 0, 225, 0.8),
+        "box-shadow-theme":rgba(128, 128, 128, 0.2)),
+
+);
+
+$font-stack: Helvetica, sans-serif;
+$green: green;
+$gradientBtn: linear-gradient(102deg, #00BEF2 0%, #008DB4 47%, #005360 100%);
+// linear-gradient(to right, #f6d365 0%, #fda085 51%, #f6d365 100%)

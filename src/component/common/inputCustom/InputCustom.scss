@@ -1,0 +1,72 @@
+@import "../../../asset/var.scss";
+@import "../../../asset/mixin.scss";
+
+.outerInput {
+    position: relative;
+    color: black;
+
+    label.label.form-label {
+        display: block;
+        margin-bottom: 5px;
+    }
+
+
+
+    input.mainInput.customInput,
+    input.password.customInput {
+        border: 1px solid #D7D4E0;
+        border-radius: 8px;
+        height: 50px;
+        padding: 10px 12px;
+        flex: 1 1 auto;
+
+        &:hover,
+        &:active,
+        &:focus {
+            outline: none;
+            box-shadow: 0 0 0 1px #00BEF2;
+        }
+    }
+
+    .eyeIcon {
+        border-color: #008DB4;
+        background-image: $gradientBtn;
+        overflow: hidden;
+        color: black;
+
+        &:after {
+            content: " ";
+            position: absolute;
+            z-index: -1;
+            transition: all 0.3s ease;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+        }
+
+        i {
+            color: black;
+        }
+
+        &:hover {
+            transition: all 0.3s ease;
+            border: 1px solid #008DB4;
+            box-shadow: 0 0 0 1px #00BEF2;
+
+            &::after {
+                width: 100%;
+                left: 0;
+                z-index: 2;
+            }
+        }
+    }
+}
+
+.widthfull {
+    input.mainInput.customInput {
+        width: 100%;
+
+    }
+}

@@ -1,0 +1,34 @@
+.outerArea {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: fixed;
+    z-index: 99999;
+    width: 100%;
+    top: 0;
+
+    .loaderCustom {
+        font-size: 40px;
+        font-weight: bold;
+        color: #0000;
+        animation: loaderCustom-animation 1s infinite alternate linear;
+        background: radial-gradient(circle closest-side, #000 94%, #0000) right/calc(200% - 1em) 100%;
+
+        &::before {
+            content: "Loading...";
+            background: inherit;
+            background-clip: text;
+            background-image: radial-gradient(circle closest-side, #fff 94%, #000);
+        }
+    }
+
+    @keyframes loaderCustom-animation {
+        100% {
+            background-position: left;
+        }
+    }
+}

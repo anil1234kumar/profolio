@@ -1,0 +1,179 @@
+@import "../../../asset/mixin.scss";
+@import "../../../asset/var.scss";
+
+button.main-btn.customBtn {
+
+    &-primary {
+        background-image: $gradientBtn;
+        border-radius: 8px;
+        border: 1px solid #008DB4;
+        transition: all 0.3s ease;
+        position: relative;
+
+        &:after {
+            content: "";
+            position: absolute;
+            z-index: -1;
+            transition: all 0.3s ease;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 8px;
+        }
+
+        &:hover {
+            &::after {
+                width: 100%;
+                left: 0;
+                z-index: 2;
+            }
+        }
+    }
+
+}
+
+// button.main-btn.customBtn,
+// button.second-btn.customBtn {
+button.neoBtn {
+    &:before {
+        content: "";
+        background: linear-gradient(45deg,
+                #ff0000,
+                #ff7300,
+                #fffb00,
+                #48ff00,
+                #00ffd5,
+                #002bff,
+                #7a00ff,
+                #ff00c8,
+                #ff0000);
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        background-size: 400%;
+        z-index: -1;
+        filter: blur(5px);
+        width: calc(100% + 4px);
+        height: calc(100% + 4px);
+        animation: glow 20s linear infinite;
+        opacity: 1;
+        transition: opacity 0.3s ease-in-out;
+    }
+
+    &:hover:before {
+        opacity: 0;
+    }
+
+    &:active:after {
+        background: transparent;
+    }
+
+    @keyframes glow {
+        0% {
+            background-position: 0 0;
+        }
+
+        50% {
+            background-position: 400% 0;
+        }
+
+        100% {
+            background-position: 0 0;
+        }
+    }
+}
+
+// }
+
+button.second-btn.customBtn {
+    &-outline-primary {
+        border: 1px solid #008DB4;
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        position: relative;
+
+
+        span {
+            cursor: pointer;
+            display: inline-block;
+            position: relative;
+            transition: 0.5s;
+        }
+
+        span.backbtn {
+            width: 100px;
+
+            &:after {
+                content: '\00ab';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                left: 50%;
+                transition: 0.8s;
+                transform: scale(1.5) translateY(-1px);
+            }
+
+
+        }
+
+        span.rightSide {
+            width: 150px;
+
+            &:after {
+                content: '\00bb';
+                position: absolute;
+                opacity: 0;
+                top: 0;
+                right: 10px;
+                transition: 0.8s;
+                transform: scale(1.5) translateY(-1px);
+            }
+        }
+
+        &:after {
+            content: " ";
+            position: absolute;
+            z-index: -1;
+            transition: all 0.3s ease;
+            left: 0;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 8px;
+        }
+
+        &:hover {
+            background-image: $gradientBtn;
+            transition: all 0.3s ease;
+
+            span.rightSide {
+                padding-right: 25px;
+
+                &:after {
+                    opacity: 1;
+                    right: 10px;
+                }
+            }
+
+            span.backbtn {
+                padding-left: 25px;
+
+                &:after {
+                    opacity: 1;
+                    left: 20px;
+                }
+            }
+
+            &::after {
+                width: 100%;
+                left: 0;
+                z-index: 2;
+            }
+        }
+
+
+    }
+}

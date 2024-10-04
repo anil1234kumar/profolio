@@ -1,0 +1,29 @@
+@import "../../asset/var.scss";
+@import "../../asset/mixin.scss";
+
+
+.offcanvas-body {
+    .navbar-nav {
+        a {
+            padding: 0 10px;
+        }
+
+        button {
+            margin: 0 10px;
+        }
+    }
+
+}
+
+.headerDesign {
+    nav.CustomNabar.navbar {
+        background: white;
+        padding: 20px;
+    }
+
+    &_main {
+        display: inline-flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+}

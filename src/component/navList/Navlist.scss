@@ -1,0 +1,14 @@
+.nav-list-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+        flex-basis: 90%;
+        overflow: auto;
+
+        a {
+            padding: 20px;
+        }
+    }
+}

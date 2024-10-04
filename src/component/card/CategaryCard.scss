@@ -1,0 +1,18 @@
+@import "../../asset/var.scss";
+@import "../../asset/mixin.scss";
+
+.categoryDesign {
+    img {
+        height: 300px;
+        object-fit: cover;
+        border-bottom: 1px solid grey
+    }
+}
+
+.card {
+    // @include theme() {
+    //     background-color: theme-get("darkWhiteReverse");
+    //     color: theme-get("darkWhite");
+    //     border-color: grey;
+    // }
+}

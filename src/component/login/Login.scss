@@ -1,0 +1,38 @@
+@import "../../asset/mixin.scss";
+@import "../../asset/var.scss";
+
+
+.login-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .loginMain {
+
+        &_card {
+            @include theme() {
+                background-color: theme-get("bg-card");
+            }
+
+            .card-body {
+                padding: unset;
+
+                .nav-item {
+                    .nav-link {
+                        border-bottom: unset;
+                        color: black;
+                    }
+                }
+
+
+                .nav-tabs,
+                .nav-link.active {
+                    border-color: inherit;
+                    color: #00BEF2;
+                    background-color: white;
+
+                }
+            }
+        }
+    }
+}

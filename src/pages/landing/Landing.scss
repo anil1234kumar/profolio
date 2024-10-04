@@ -1,0 +1,210 @@
+@import "../../asset/var.scss";
+@import "../../asset/mixin.scss";
+
+
+
+
+.classNamenew {
+    opacity: 0.8;
+}
+
+.message-shared {
+    border: 1px solid #ccc;
+    padding: 10px;
+    color: #333;
+}
+
+.abc {
+    font-family: $font-stack ;
+}
+
+.info {
+
+    @extend %toolbelt;
+    @include avatar(100px, $circle: true);
+    // background-color: $green;
+}
+
+// practice
+
+// Function to generate menu styles for each menu item
+
+
+// Menu styles with different menu items
+.menu {
+    .menu-list {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        @include menu-item-style(("1", "2", "3", "4", "About", "Services", "Contact", "Main", "abc", "7", "8", "9,", "10"));
+    }
+}
+
+
+.TradingCard {
+    padding: 30px;
+    box-shadow: 0px 3px 16px #00000017;
+    height: 100%;
+    border: 1px solid #0000;
+    border-radius: 20px;
+    background:
+        linear-gradient(white 0%, white 100%) padding-box,
+        linear-gradient(160deg, white 10%, #00BEF2, white) border-box;
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+
+    &:hover {
+        transform: translateY(-10px);
+        transition: 0.3s;
+
+        .card19-meta {
+            max-height: 20px;
+        }
+
+    }
+
+    .ribbon-container {
+        width: 120px;
+        height: 120px;
+        overflow: hidden;
+        position: absolute;
+        top: -4px;
+        right: -3px;
+        z-index: 1;
+
+        .ribbon-tag {
+            text-align: center;
+            transform: rotate(45deg);
+            position: relative;
+            padding: 6px 0;
+            left: -22px;
+            top: 33px;
+            width: 190px;
+            color: #ffffff;
+            box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.3);
+            text-shadow: rgba(255, 255, 255, 0.5) 0px 1px 0px;
+            background: #8646ff;
+            background: linear-gradient(to bottom,
+                    #8646ff 0%,
+                    #6e3fe8 50%,
+                    #4b2bb1 51%,
+                    #8646ff 100%);
+        }
+    }
+
+    &_main {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 15px;
+    }
+
+    .bgHill {
+        position: absolute;
+        right: 0;
+        bottom: 0px;
+        z-index: -1;
+    }
+
+    &_IconOuter {
+        background-color: #00BDF21A;
+        border: 1px solid #00BEF2;
+        border-radius: 10px;
+        padding: 15px;
+        min-width: 75px;
+        height: 75px;
+        display: inline-block;
+
+
+        i {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            font-size: 26px;
+        }
+    }
+
+    .card19-meta {
+        max-height: 0;
+        overflow: hidden;
+        color: #7e7c7c;
+        font-size: 0.78em;
+        position: absolute;
+        bottom: 5%;
+        padding: 0 5%;
+        transition-property: max-height;
+        transition-duration: 0.4s;
+        transition-timing-function: ease-in-out;
+        left: 50%;
+        transform: translatex(-50%);
+    }
+}
+
+.serviceCard {
+    position: relative;
+    // height: 16rem;
+    // width: 11rem;
+    overflow: hidden;
+    background-color: #f5f5f5;
+    color: black;
+    font-family: "Inter", sans-serif;
+    box-shadow: #00000059 0px 5px 15px;
+
+    &_img img {
+        width: 100%;
+    }
+
+    &_details {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        transform: translateY(6.2rem);
+        border-top-left-radius: 0.8rem;
+        background-color: #f5f5f5;
+        padding: 1.25rem;
+        transition: transform 0.3s;
+    }
+
+    &_details::before {
+        content: "";
+        position: absolute;
+        right: -45px;
+        top: -47px;
+        height: 6rem;
+        width: 6rem;
+        transform: rotate(-177deg);
+        border-radius: 50%;
+        box-shadow: inset 48px 47px #f2f2f2;
+    }
+
+    .serviceCard:hover .serviceCard-details {
+        transform: translateY(0);
+    }
+
+    .serviceCard-title {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: bold;
+    }
+
+    .serviceCard-subtitle {
+        margin: 7px 0 3px;
+        display: block;
+        font-size: 13px;
+    }
+
+    .serviceCard-description {
+        font-size: 12px;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+
+    .serviceCard:hover .serviceCard-description {
+        opacity: 100%;
+        transition-delay: 0.2s;
+    }
+
+}
